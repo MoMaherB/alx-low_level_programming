@@ -2,9 +2,9 @@
 /**
  * main - Entry point
  *
- * Description: REally
+ * Description: A C program that prints with wgrgrg
  *
- * Return : i guess som thing
+ * Return: i guess som thing
 */
 
 int main(void)
