@@ -1,4 +1,11 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: REally
+ *
+ * Return : i guess som thing
+*/
 
 in main(void)
 {
