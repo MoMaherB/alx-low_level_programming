@@ -1,7 +1,4 @@
-#!/bin/bash
-echo "Enter file name:"
-read file_name
-echo "#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -14,5 +11,4 @@ echo "#include <stdio.h>
 int main(void)
 {
         return (0);
-}" > ${file_name}
-chmod +x ${file_name}
+}
