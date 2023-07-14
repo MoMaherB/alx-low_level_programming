@@ -9,6 +9,7 @@
 */
 
 int main(void)
+
 {
 	int digit1 = 0;
 	int digit2, digit3;
@@ -35,13 +36,13 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-					digit3++;
 				}
-				digit2++;
+				digit3++;
 			}
-			digit1++;
+			digit2++
 		}
-		putchar('\n');
-		return (0);
+		digit1++;
 	}
+	putchar('\n');
+	return (0);
 }
