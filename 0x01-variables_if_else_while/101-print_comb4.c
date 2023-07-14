@@ -35,7 +35,7 @@ int main(void)
 				}
 				digit3++;
 			}
-			digit2++
+			digit2++;
 		}
 		digit1++;
 	}
