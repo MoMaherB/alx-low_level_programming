@@ -1,14 +1,19 @@
-#include <stdio.h>
+#include "main.h"
+#include <ctype.h>
 
 /**
- * main - Entry point
+ * print_sign - Checks of sign of numer if -ve , +ve or 0
  *
- * Description: Positive or negative
+ * @n: The numer to be checked.
  *
- * Return: 0 (success)
+ * Return: "+" if n is +ve, "-" if n is -ve, 0 otherwise.
 */
-
-int main(void)
+int print_sign(int n)
 {
-        return (0);
+	if (n > 0)
+		return ('+');
+	else if (n == 0)
+		return (0);
+	else
+		return ('-');
 }
