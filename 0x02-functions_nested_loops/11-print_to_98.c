@@ -10,22 +10,12 @@
 */
 void print_to_98(int n)
 {
-	int i;
-
-	for (i = n; i <= 89; i++)
-	{
-		if (i <= 9)
-		{
-			_putchar(i + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
+	int count;
+	if (n > 98)
+		for (count = n; count > 98; count--)
+			printf("%d, ", count);
+	else
+		for (count = n; count < 98; count++)
+			printf("%d, ", count);
+	printf("98\n");
 }
