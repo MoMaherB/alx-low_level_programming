@@ -4,11 +4,11 @@
 /**
  * _abs - Checks if a character is lowercase.
  *
- * @int: The character to be checked.
+ * @n: The character to be checked.
  *
  * Return: abs(int).
 */
-int _abs(int)
+int _abs(int n)
 {
-	return (abs(int));
+	return (abs(n));
 }
