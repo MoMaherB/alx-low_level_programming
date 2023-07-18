@@ -1,14 +1,18 @@
-#include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
- * main - Entry point
+ * add - Checks if a character is lowercase.
  *
- * Description: Positive or negative
+ * @n: The character to be checked.
  *
- * Return: 0 (success)
+ * @m: jdjdjdj
+ *
+ * Return: abs(int).
 */
-
-int main(void)
+int add(int n, int m)
 {
-        return (0);
+
+	sum = n + m;
+	return (sum);
 }
