@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - do somthing
  *
- * Description: Positive or negative
- *
- * Return: 0 (success)
 */
 
 void print_alphabet(void)
