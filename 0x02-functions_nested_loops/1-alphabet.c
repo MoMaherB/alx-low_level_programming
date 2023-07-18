@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -8,8 +8,12 @@
  * Return: 0 (success)
 */
 
-int main(void)
+void print_alphabet(void) 
 {
-	void print_alphabet(void);
-        return (0);
+	char ch = 'a';
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
 }
