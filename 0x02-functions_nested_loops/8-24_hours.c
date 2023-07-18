@@ -1,14 +1,25 @@
-#include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
- * main - Entry point
+ * jack_bauer - Checks if a character is lowercase.
  *
- * Description: Positive or negative
- *
- * Return: 0 (success)
+ * Return: abs(int).
 */
-
-int main(void)
+void jack_bauer(void)
 {
-        return (0);
+	int hr, mi;
+
+	for (hr = 0; hr <= 23; hr++)
+	{
+		for (mi = 0; mi <= 59; mi++)
+		{
+			_putchar((hr / 10) + '0');
+			_putchar((hr % 10) + '0');
+			_putchar(':');
+			_putchar((mi / 10) + '0');
+			_putchar((mi % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
