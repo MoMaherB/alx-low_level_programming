@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Enter file name:"
+read file_name
+echo "#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: Positive or negative
+ *
+ * Return: 0 (success)
+*/
+
+int main(void)
+{
+        return (0);
+}" > ${file_name}
+chmod +x ${file_name}
