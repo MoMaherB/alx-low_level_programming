@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+#include <stdlib.h>
 
 /**
  * _abs - Checks if a character is lowercase.
