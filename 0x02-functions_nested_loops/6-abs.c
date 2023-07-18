@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include "main.h"
+#include <ctype.h>
 
 /**
- * main - Entry point
+ * _abs - Checks if a character is lowercase.
  *
- * Description: Positive or negative
+ * @int: The character to be checked.
  *
- * Return: 0 (success)
+ * Return: abs(int).
 */
-
-int main(void)
+int _abs(int)
 {
-        return (0);
+	return (abs(int));
 }
