@@ -1,14 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_last_digit - Checks if a character is lowercase.
  *
- * Description: Positive or negative
+ * @n: The character to be checked.
  *
- * Return: 0 (success)
+ * Return: last number.
 */
-
-int main(void)
+int print_last_digit(int n)
 {
-        return (0);
+	int digit;
+
+	digit = n % 10;
+	return (digit);
 }
