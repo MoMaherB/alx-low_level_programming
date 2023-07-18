@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _abs - Checks if a character is lowercase.
+ * print_times_table - Checks if a character is lowercase.
  *
  * @n: The character to be checked.
  *
