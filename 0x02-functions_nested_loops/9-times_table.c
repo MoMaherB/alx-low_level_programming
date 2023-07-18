@@ -4,7 +4,7 @@
 /**
  * times_table - Checks if a character is low.
 */
-void times_table(void);
+void times_table(void)
 {
 	int i, j, sum;
 
