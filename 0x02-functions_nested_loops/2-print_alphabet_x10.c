@@ -1,14 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - do somthing
  *
- * Description: Positive or negative
- *
- * Return: 0 (success)
 */
 
-int main(void)
+void print_alphabet_x10(void)
 {
-        return (0);
+	for (int i = 0, i <= 10 ; i++)
+	{
+		for (char ch = 'a';ch <='z'; ch++)
+		{
+			_putchar(ch);
+
+		}
+		_putchar('\n');
+	}
 }
