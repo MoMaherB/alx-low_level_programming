@@ -1,14 +1,31 @@
-#include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
- * main - Entry point
+ * print_to_98 - Checks if a character is lowercase.
  *
- * Description: Positive or negative
+ * @n: The character to be checked.
  *
- * Return: 0 (success)
+ * Return: abs(int).
 */
-
-int main(void)
+void print_to_98(int n)
 {
-        return (0);
+	int i;
+
+	for (i = n; i <= 89; i++)
+	{
+		if (i <= 9)
+		{
+			_putchar(i + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+		else
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
 }
