@@ -24,4 +24,5 @@ int main(void)
 			printf("%i ", count);
 	}
 	printf("\n");
+	return (0);
 }
