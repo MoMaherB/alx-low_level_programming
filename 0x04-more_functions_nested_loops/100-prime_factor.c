@@ -9,9 +9,11 @@
  *Return: kkk
  */
 
-long long largest_prime_factor(long long num)
+long int largest_prime_factor(long int num)
 {
-	long long largest_factor = 0;
+	long int i;
+
+	long int largest_factor = 0;
 	/*Divide by 2 repeatedly until it's not divisible by 2*/
 	while (num % 2 == 0)
 	{
@@ -19,7 +21,7 @@ long long largest_prime_factor(long long num)
 		num /= 2;
 	}
 	/*Now check for other odd prime factors*/
-	for (long long i = 3; i * i <= num; i += 2)
+	for (i = 3; i * i <= num; i += 2)
 	{
 		while (num % i == 0)
 		{
@@ -44,9 +46,6 @@ long long largest_prime_factor(long long num)
 */
 int main(void)
 {
-	long long number = 612852475143;
-	long long largest_prime = largest_prime_factor(number);
-
-	printf("%lld\n", largest_prime);
+	largest_prime_factor(612852475143);
 	return (0);
 }
