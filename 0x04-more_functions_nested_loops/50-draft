@@ -14,7 +14,13 @@ void more_numbers(void)
 	{
 		for (count_num = 0; count_num <= 14; count_num++)
 		{
-			printf("%i", count_num);
+			if (count_num <= 9)
+				_putchar(count_num + '0');
+			else
+			{
+				_putchar('1');
+				_putchar((count_num - 10) + '0');
+			}
 		}
 		_putchar('\n');
 	}
