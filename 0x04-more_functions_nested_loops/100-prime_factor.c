@@ -9,10 +9,10 @@
  *Return: kkk
  */
 
-long int largest_prime_factor(long int num)
+void largest_prime_factor(long int num)
 {
-	long int i;
-	long int largest_factor = 0;
+	int i;
+	int largest_factor = 0;
 
 	while (num % 2 == 0)
 	{
@@ -31,8 +31,7 @@ long int largest_prime_factor(long int num)
 	{
 		largest_factor = num;
 	}
-	printf("%ld", largest_factor);
-	return (largest_factor);
+	printf("%d\n", largest_factor);
 }
 
 /**
