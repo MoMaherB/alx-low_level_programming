@@ -2,7 +2,7 @@
 
 /**
  * print_square - This function print nubers from 0 to 9 except 2 and 4
- * @n: parameter
+ * @size: parameter
  *
  * Return: 0
  */
