@@ -11,7 +11,7 @@
 
 int mul(int a, int b)
 {
-	long int mult;
+	int mult;
 
 	mult = a * b;
 
