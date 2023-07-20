@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main -Entry point
+ * main - Entry point
  *
  * Description: A Fizz Buzz Program
  *
  * Return: fizz Buzz
- */
+*/
 
 int main(void)
 {
