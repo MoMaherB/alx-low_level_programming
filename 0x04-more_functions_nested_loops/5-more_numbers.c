@@ -13,9 +13,7 @@ void more_numbers(void)
 	for (count_lines = 0; count_lines <= 9; count_lines++)
 	{
 		for (count_num = 0; count_num <= 14; count_num++)
-		{
 			printf("%i", count_num);
-		}
 		_putchar('\n');
 	}
 	_putchar('\n');
