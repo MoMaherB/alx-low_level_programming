@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * swap_int - function that takes a pointer to an int parametr
  *
