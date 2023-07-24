@@ -7,7 +7,7 @@
  *@s: ...do somthing
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int strl;
 	strl = strlen(char *s);
