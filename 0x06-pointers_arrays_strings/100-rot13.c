@@ -9,28 +9,17 @@
 
 char *rot13(char *str)
 {
-	char *uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *lowercase = "abcdefghijklmnopqrstuvwxyz";
-	char *rot13_upper = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *rot13_lower = "nopqrstuvwxyzabcdefghijklm";
+	char *alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *rot13_alphabet = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; uppercase[j] != '\0'; j++)
+		for (j = 0; alphabet[j] != '\0'; j++)
 		{
-			if (str[i] == uppercase[j])
+			if (str[i] == alphabet[j])
 			{
-				str[i] = rot13_upper[j];
-				break;
-			}
-		}
-
-		for (j = 0; lowercase[j] != '\0'; j++)
-		{
-			if (str[i] == lowercase[j])
-			{
-				str[i] = rot13_lower[j];
+				str[i] = rot13_alphabet[j];
 				break;
 			}
 		}
