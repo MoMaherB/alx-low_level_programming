@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strcat - function that takes a pointer to an int parametr
+ * _strncat - function that takes a pointer to an int parametr
  *
  *@dest: ...do somthing
  *@src: ..dkkf
- *
+ *@n: gggg
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
