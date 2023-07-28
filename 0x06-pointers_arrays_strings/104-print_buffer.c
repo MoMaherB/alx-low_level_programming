@@ -4,8 +4,6 @@
  * print_buffer - Prints the content of a buffer.
  * @b: The buffer to be printed.
  * @size: The size of the buffer.
- *
- * Description: The function p.
  */
 
 void print_buffer(char *b, int size)
