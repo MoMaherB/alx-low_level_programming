@@ -12,41 +12,43 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int len_n1 = strlen(n1), int len_n2 = strlen(n2), int carry = 0;
-	int sum, int i = len_n1 - 1, int j = len_n2 - 1, int idx = 0;
-	int start = 0, int end = idx - 1, char temp;
+	int i = 0, j = 0, k, l = 0, f, s, d = 0;
 
-	if (len_n1 + len_n2 + 1 > size_r)
+	while (n1[i] != '\0')
+		i++;
+	while (n2[j] != '\0')
+		j++;
+	if (i > j)
+		l = i;
+	else
+		l = j;
+	if (l + 1 > size_r)
 		return (0);
+	r[l] = '\0';
 
-	while (i >= 0 || j >= 0 || carry > 0)
+	for (k = l - 1; k >= 0; k--)
 	{
-		sum = carry;
-
-		if (i >= 0)
-			sum += n1[i] - '0';
-		if (j >= 0)
-			sum += n2[j] - '0';
-
-		r[idx] = (sum % 10) + '0';
-		carry = sum / 10;
-
-		idx++;
-
 		i--;
 		j--;
+		if (i >= 0)
+			f = n1[i] - '0';
+		else
+			f = 0;
+		if (j >= 0)
+			s = n2[j] - '0';
+		else
+			s = 0;
+		r[k] = (f + s + d) % 10 + '0';
+		d = (f + s + d) / 10;
 	}
-	r[idx] = '\0';
-
-	while (start < end)
-
+	if (d == 1)
 	{
-		temp = r[start];
-		r[start] = r[end];
-		r[end] = temp;
-		start++;
-		end--;
+		r[l + 1] = '\0';
+		if (l + 2 > size_r)
+			return (0);
+		while (l-- >= 0)
+			r[l + 1] = r[l];
+		r[0] = d + '0';
 	}
-
 	return (r);
 }
