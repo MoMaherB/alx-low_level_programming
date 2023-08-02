@@ -9,7 +9,7 @@
  * Return: The natural square root of 'n', or -1 if not found.
  */
 
-int _sqrt_helper(long int n, int low, long int high)
+long int _sqrt_helper(long int n, long int low, long int high)
 {
 	long int mid = 0;
 	long int midSquared = 0;
