@@ -9,10 +9,10 @@
  * Return: The natural square root of 'n', or -1 if not found.
  */
 
-int _sqrt_helper(int n, int low, int high)
+int _sqrt_helper(long int n, int low, long int high)
 {
-	int mid = 0;
-	int midSquared = 0;
+	long int mid = 0;
+	long int midSquared = 0;
 
 	if (low > high)
 	{
@@ -42,12 +42,12 @@ int _sqrt_helper(int n, int low, int high)
  *
  * Return: The natural square root of 'n', or -1 if not found.
  */
-int _sqrt_recursion(int n)
+int _sqrt_recursion(long int n)
 {
 	if (n < 0)
 	{
 		return (-1);
 	}
 
-	return (_sqrt_helper(n, 0, n / 2));
+	return (_sqrt_helper(n, 0, n));
 }
