@@ -54,7 +54,7 @@ int _sqrt_recursion(int n)
 	}
 	else if (n > 14748367)
 	{
-		return (_sqrt_helper(n, 0, (n / 100)));
+		return (_sqrt_helper(n, 0, (n / 1000)));
 	}
 	else
 	{
