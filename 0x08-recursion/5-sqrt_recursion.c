@@ -11,14 +11,13 @@
 
 int _sqrt_helper(int n, int low, int high)
 {
+	int mid = 0;
+        int midSquared = 0;
+
 	if (low > high)
 	{
 		return (-1);
 	}
-
-	int mid = 0;
-	int midSquared = 0;
-
 	mid = low + (high - low) / 2;
 	midSquared = mid * mid;
 
