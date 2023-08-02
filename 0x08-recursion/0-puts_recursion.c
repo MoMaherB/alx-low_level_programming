@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_puts_recursion: function that prints a string i dont know
+ *_puts_recursion - function that prints a string i dont know
  *@s: parameter of astring
  *Return: void
  */
