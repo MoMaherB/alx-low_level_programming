@@ -11,21 +11,20 @@
 
 int main(int argc, char *argv[])
 {
+	int numCoins = 0;
+	int cents = atoi(argv[1]);
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	int cents = atoi(argv[1]);
-
 	if (cents < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	int numCoins = 0;
 
 	numCoins += cents / 25;
 	cents %= 25;
