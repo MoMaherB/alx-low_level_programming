@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
 	numCoins += cents / 5;
 	cents %= 5;
-	
+
 	numCoins += cents / 2;
 	cents %= 2;
 
