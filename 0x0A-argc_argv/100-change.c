@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	if (cents < 0)
 	{
-		printf("0\n");
+		printf("%d\n", 0);
 		return (0);
 	}
 
