@@ -32,6 +32,7 @@ char **strtow(char *str)
 {
 	int i, j = 0, k, len;
 	int words;
+	char **word_array;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
@@ -41,7 +42,7 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 
-	char **word_array = malloc(sizeof(char *) * (words + 1));
+	word_array = malloc(sizeof(char *) * (words + 1));
 
 	if (word_array == NULL)
 		return (NULL);
