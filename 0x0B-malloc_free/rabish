@@ -5,15 +5,16 @@
  * @ac: The number of arguments.
  * @av: An array of pointers to the arguments.
  *
- * Return: A pointer to the concatenated string, or NULL on failure.
+ * Return: A pointer to the
+ * concatenated string, or NULL on failure.
  */
 
 char *argstostr(int ac, char **av)
 {
-	int index = 0;
 	int total_length = 0;
-	int i, j;
+	int i, j, k;
 	char *concatenated_str = malloc(sizeof(char) * (total_length + 1));
+	int index = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -30,9 +31,9 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (k = 0; av[i][k] != '\0'; k++)
 		{
-			concatenated_str[index] = av[i][j];
+			concatenated_str[index] = av[i][k];
 			index++;
 		}
 		concatenated_str[index] = '\n';
