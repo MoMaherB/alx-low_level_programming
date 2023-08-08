@@ -4,7 +4,7 @@
  * alloc_grid - creates arry of charachters
  *
  * @width: the width
- * #height: the height
+ * @height: the height
  * Return: m or NUll
  */
 
