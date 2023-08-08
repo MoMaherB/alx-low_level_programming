@@ -31,7 +31,6 @@ int count_words(char *str)
 char **strtow(char *str)
 {
 	int i, j = 0, k, len;
-	char **word_array;
 	int words;
 
 	if (str == NULL || *str == '\0')
@@ -42,7 +41,7 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 
-	*word_array = malloc(sizeof(char *) * (words + 1));
+	char **word_array = malloc(sizeof(char *) * (words + 1));
 
 	if (word_array == NULL)
 		return (NULL);
