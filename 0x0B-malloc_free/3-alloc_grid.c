@@ -11,14 +11,12 @@
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	int **grid;
+	int **grid = (int **)malloc(height * sizeof(int *));
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-
-	*grid = (int **)malloc(height * sizeof(int *));
 
 	if (grid == NULL)
 	{
