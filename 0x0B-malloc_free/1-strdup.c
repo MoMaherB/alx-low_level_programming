@@ -3,7 +3,7 @@
 /**
  * _strdup - creates arry of charachters
  *
- * @s: the size of array
+ * @str: the size of array
  * Return: m or NUll
  */
 
