@@ -13,6 +13,8 @@ char *argstostr(int ac, char **av)
 {
 	int total_length = 0;
 	int i, j, k;
+	char *concatenated_str = malloc(sizeof(char) * (total_length + 1));
+	int index = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -24,12 +26,8 @@ char *argstostr(int ac, char **av)
 		total_length++;
 	}
 
-	char *concatenated_str = malloc(sizeof(char) * (total_length + 1));
-
 	if (concatenated_str == NULL)
 		return (NULL);
-
-	int index = 0;
 
 	for (i = 0; i < ac; i++)
 	{
