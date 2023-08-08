@@ -3,33 +3,29 @@
 /**
  * _strdup - creates arry of charachters
  *
- * @str: the size of array
- * Return: n or NUll
+ * @s: the size of array
+ * Return: m or NUll
  */
 
-char *_strdup(char *str)
+char *_strdup(char *s)
 {
-	int length;
-	int i;
-	char *duplicate;
+	int i = 0, size = 0;
+	char *m;
 
 	if (str == NULL)
 		return (NULL);
-	while (str[length] != '\0')
-	{
-		length++;
-	}
+	for (size = 0; str[size] != '\0'; size++)
+	;
+	m = malloc(size * sizeof(*str) + 1);
 
-	duplicate = (char *)malloc((length + 1) * sizeof(char));
-
-	if (duplicate == NULL)
+	if (m == 0)
 	{
 		return (NULL);
 	}
-
-	for (i = 0; i <= length; i++)
+	else
 	{
-		duplicate[i] = str[i];
+		for (i = 0; i < size; i++)
+			m[i] = str[i]
 	}
-	return (duplicate);
+	return (m);
 }
