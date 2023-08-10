@@ -2,7 +2,7 @@
 #include <limits.h>
 
 /**
- * malloc_checked
+ * malloc_checked - The function
  *
  *@b: unsigened int
  *Return: NULL or size
