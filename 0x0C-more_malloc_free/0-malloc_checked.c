@@ -5,7 +5,7 @@
  * malloc_checked
  *
  *@b: unsigened int
- *Return:
+ *Return: NULL or size
  */
 
 void *malloc_checked(unsigned int b)
@@ -17,4 +17,5 @@ void *malloc_checked(unsigned int b)
 		exit(98);
 	}
 
-}	return (size);
+	return (size);
+}
