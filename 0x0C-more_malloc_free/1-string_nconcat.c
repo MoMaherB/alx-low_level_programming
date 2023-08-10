@@ -3,16 +3,15 @@
 
 /**
  * string_nconcat - The function
- *
  *@s1: first string
  *@s2: second string
  *@n: the number of nconcat
- *Return: NULL or size
+ *Return:NULL or concat
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1 = strlen(s1);
+	unsigned int len1;
 	unsigned int i, j;
 	char *concat;
 
@@ -20,7 +19,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
+	for (len1 = 0; s1[len1] != '\0'; len1++)
+		;
 	concat = malloc(len1 + n + 1);
 
 	if (concat == NULL)
