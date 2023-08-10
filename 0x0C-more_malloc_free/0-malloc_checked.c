@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * malloc_checked
