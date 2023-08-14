@@ -9,11 +9,8 @@
  * @age: Age of the dog
  * @owner: Pointer to the owner's name
  *
- * Return: Pointer to the new struct dog, or NULL if memory allocation fails
- *
- * Description: This function creates a
- * new struct dog instance and copies the provided
- * name and owner strings to ensure they are stored independently.
+ * Return: Pointer to the new struct dog,
+ * or NULL if memory allocation fails
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
