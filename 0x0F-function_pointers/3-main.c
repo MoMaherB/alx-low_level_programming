@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 
 	operation = get_op_func(argv[2]);
-        if (!operation)
+	if (!operation)
 		printf("Error\n"), exit(99);
 
 	if (!num2 && (argv[2][0] == '/' || argv[2][0] == '%'))
