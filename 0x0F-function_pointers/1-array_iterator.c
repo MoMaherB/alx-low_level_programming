@@ -6,10 +6,9 @@
  * @size: The size of the array.
  * @action: A function pointer that takes an integer as an argument.
  *
- * This function iterates through the
- * array and applies the provided function
- * to each element of the array.
+ * Return: void
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int *end = array + size + 1;
