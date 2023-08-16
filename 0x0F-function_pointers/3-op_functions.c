@@ -47,7 +47,6 @@ int op_div(int a, int b)
 {
 	return (a / b);
 }
-
 /**
  * op_mod - Returns the remainder of integer division.
  * @a: The dividend.
@@ -59,4 +58,3 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
-
