@@ -1,7 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - the function that add any numbers the users enter
+ * sum_them_all - the function that 
+ * add any numbers the users enter
  *@n: the count
  *@separator: the separator by user
  * Return: void
@@ -13,7 +14,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(args, n);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n; ++i)
 	{
 		num = va_arg(args, int);
 		printf("%d", num);
