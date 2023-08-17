@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - the function that
+ * print_numbers - the function that
  * add any numbers the users enter
  *@n: the count
  *@separator: the separator by user
