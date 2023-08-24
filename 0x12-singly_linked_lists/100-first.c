@@ -3,8 +3,7 @@
 void f(void) __attribute__ ((constructor));
 
 /**
- * f - prints a sentence before the main
- * function is executed
+ * f - the function prints a sentence before main
  */
 void f(void)
 {
