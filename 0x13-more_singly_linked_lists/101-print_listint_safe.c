@@ -53,20 +53,20 @@ size_t looped_listint_len(const listint_t *head)
 }
 
 /**
- * print_listint_safe - Prints a listint_t list safely.
- * @head: A pointer to the head of the listint_t list.
+ * print_listint_safe - Prints safly a list.
+ * @head: points to the head of the listint_t list.
  *
- * Return: The number of nodes in the list.
+ * Return: number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes, index = 0;
 
-	nodes = looped_listint_len(head);
+	node = looped_listint_len(head);
 
-	if (nodes == 0)
+	if (node == 0)
 	{
-		for (; head != NULL; nodes++)
+		for (; head != NULL; node++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
@@ -75,7 +75,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	else
 	{
-		for (index = 0; index < nodes; index++)
+		for (index = 0; index < node; index++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
@@ -84,5 +84,5 @@ size_t print_listint_safe(const listint_t *head)
 		printf("-> [%p] %d\n", (void *)head, head->n);
 	}
 
-	return (nodes);
+	return (node);
 }
