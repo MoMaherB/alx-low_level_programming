@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
+#include <gmp.h>
 
 /**
  * is_positive_integer - Check if a string is a positive integer.
