@@ -1,5 +1,5 @@
 /**
- * flip_bits - counts the number of bits needed to flip to convert one number to another
+ * flip_bits - counts the number of bits needed to flip
  * @n: the first number
  * @m: the second number
  *
