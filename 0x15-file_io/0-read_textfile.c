@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * read_textfile- Rd txt to STDOUT.
  * @filename: file to read name
