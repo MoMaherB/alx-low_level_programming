@@ -1,18 +1,21 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
- * main - Generates and prints passwords for the crackme5 executable.
- * @argc: The number of arguments supplied to the program.
+ * main - Generates and prints passwords for crackme5.
+ * @argc: The number of arguments.
  * @argv: An array of pointers to the arguments.
  *
  * Return: Always 0.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
+
 	char pass[7], *code;
 	int len = strlen(argv[1]), i, temp;
+
+	(void)argc;
 
 	code = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 
