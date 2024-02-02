@@ -43,7 +43,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	char *new_value;
 	unsigned long int index;
 
-	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
+	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
 	new_value = strdup(value);
