@@ -58,7 +58,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		{
 			free(temp->value);
 			temp->value = new_value;
-			return (1);
+			return (0);
 		}
 		temp = temp->snext;
 	}
@@ -108,7 +108,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		temp->snext = new_node;
 	}
 
-	return (0);
+	return (1);
 }
 
 /**
