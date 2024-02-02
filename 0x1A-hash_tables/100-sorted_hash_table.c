@@ -70,7 +70,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	new_node->key = strdup(key);
-	if (new->key == NULL)
+	if (new_node->key == NULL)
 	{
 		free(new_value);
 		free(new_node);
