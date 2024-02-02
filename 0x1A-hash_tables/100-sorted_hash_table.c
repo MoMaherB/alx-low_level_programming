@@ -58,7 +58,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		{
 			free(temp->value);
 			temp->value = new_value;
-			return (0);
+			return (1);
 		}
 		temp = temp->snext;
 	}
@@ -135,7 +135,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	temp = ht->shead;
 	while (temp != NULL && strcmp(temp->key, key) != 0)
 		temp = temp->snext;
-	if(temp != NULL)
+	if (temp != NULL)
 		return (temp->value);
 	return (NULL);
 }
